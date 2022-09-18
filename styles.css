@@ -1,0 +1,58 @@
+/* - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+  
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+ */
+
+/* section fittings */
+.landingpage {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas:
+    "text image"
+    "nav nav";
+}
+.landingpage-text {
+  grid-area: text;
+}
+.landingpage-text h1 {
+  margin-bottom: 0.8em;
+  padding-left: 0.4em;
+}
+
+.landingpage-text p {
+  text-align: right;
+  font-size: 2em;
+}
+.landingpage-nav {
+  grid-area: nav;
+}
+.landingpage-image {
+  grid-area: image;
+}
+.landingpage h1 {
+  font-size: 3.6em;
+  font-weight: 600;
+}
+
+.landingpage h1 span {
+  display: block;
+  font-weight: 400;
+}
